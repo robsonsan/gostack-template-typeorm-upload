@@ -1,4 +1,5 @@
 import { createConnection, getConnectionOptions, Connection } from 'typeorm';
+import pg from 'pg';
 
 export default async (name = 'default'): Promise<Connection> => {
   const defaultOptions = await getConnectionOptions();
